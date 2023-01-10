@@ -1,8 +1,79 @@
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <style>
+      .new,
+      .sub {
+        font-family: 'Inter', sans-serif;
+      }
 
-    <H1>Version 4.4b</H1>
-    <h4>“Bouncing Blueberries”</h4>
+      .newRelease,
+      .versionNum,
+      .prod {
+        font-family: 'Noto Serif', serif;
+      }
 
-<img src="https://avatars.githubusercontent.com/u/62093041?s=48&v=4"/>
+      .head {
+        font-family: 'Fira Code', monospace;
+      }
 
+      .head {
+        font-size: 2em;
+        font-weight: medium;
+      }
+
+      .hFlex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .newRelease {
+        font-style: italic;
+        font-size: 0.75em;
+      }
+
+      .prod {
+        font-weight: bold;
+        color: darkgreen;
+      }
+
+      .title {
+        padding: 1em;
+        flex: 1;
+        text-align: center;
+      }
+
+      .sub {
+        text-align: center;
+        font-weight: medium;
+      }
+
+      .new {
+        font-weight: bold;
+        font-style: italic;
+        color: darkred;
+        padding-right: 0.25em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hFlex">
+      <div class="newRelease" title="Watching floppy disks evolve&#13;into distributed cloud storage">
+        🎉 25th anniversary edition 🎉
+      </div>
+      <div class="title">
+        <div class="head">middle-ages</div>
+        <div class="sub">Makes your software better</div>
+      </div>
+      <div title="Better than ever for your&#13;production and testing&#13;environments">
+        <span class="new">NEW!</span> Latest release <code>v</code><span class="versionNum">20.23</span>
+        <span class="prod">prod</span>
+      </div>
+    </div>
+  </body>
 </html>
