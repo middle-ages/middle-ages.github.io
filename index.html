@@ -4,9 +4,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500&family=Noto+Serif:ital@0;1&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <style>
+      body,
       .new,
+      .sec,
+      .par,
+      .emp,
       .sub {
         font-family: 'Inter', sans-serif;
       }
@@ -19,6 +24,27 @@
 
       .head {
         font-family: 'Fira Code', monospace;
+      }
+
+      a {
+        font-weight: 500;
+        text-decoration: none;
+        color: #0000a0;
+        background-color: #f5f5ff;
+      }
+
+      a:hover {
+        background-color: #e0e0ff;
+      }
+
+      body {
+        margin: 0.5em;
+        background-color: hsl(0 0% 93%);
+      }
+
+      .body {
+        padding: 1em;
+        background-color: hsl(1 0% 98%);
       }
 
       .head {
@@ -37,7 +63,8 @@
       }
 
       .prod {
-        font-weight: bold;
+        font-weight: 600;
+        padding-left: 0.1em;
         color: darkgreen;
       }
 
@@ -45,11 +72,25 @@
         padding: 1em;
         flex: 1;
         text-align: center;
+        font-weight: 500;
       }
 
       .sub {
         text-align: center;
         font-weight: medium;
+        font-size: 1.2em;
+      }
+
+      .sec {
+        font-weight: 500;
+        font-size: 1.3em;
+        color: hsl(0 0% 30%);
+        padding-top: 0.1em;
+        padding-bottom: 0.2em;
+      }
+
+      .par {
+        padding-bottom: 0.1em;
       }
 
       .new {
@@ -58,22 +99,82 @@
         color: darkred;
         padding-right: 0.25em;
       }
+
+      .emp {
+        font-weight: 550;
+        color: hsl(1 0% 30%);
+        padding-right: 0.25ch;
+      }
     </style>
   </head>
 
   <body>
-    <div class="hFlex">
-      <div class="newRelease" title="Watching floppy disks evolve&#13;into distributed cloud storage">
-        🎉 25th anniversary edition 🎉
+    <div class="body">
+      <div class="hFlex">
+        <div class="newRelease" title="Watching floppy disks evolve&#13;into distributed cloud storage">
+          🎉 25th anniversary edition 🎉
+        </div>
+        <div class="title">
+          <div class="head" title="From the fall of the western roman&#13;empire to the start of the Renaissance">
+            middle-ages
+          </div>
+          <div class="sub" title="With efficiency and&#13;great joy for all 🙂">Helps you build better software</div>
+        </div>
+        <div title="Better than ever for&#13;𝙮𝙤𝙪𝙧 production and&#13;testing environments">
+          <span class="new">NEW!</span> Latest release <code>v</code><span class="versionNum">20.23</span>
+          <span class="prod">PROD</span>
+        </div>
       </div>
-      <div class="title">
-        <div class="head">middle-ages</div>
-        <div class="sub">Makes your software better</div>
+      <div
+        class="sec"
+        title="What is the difference between&#13;the 𝐧𝐨𝐯𝐢𝐜𝐞 and the 𝐞𝐱𝐩𝐞𝐫𝐭? the&#13;novice replies with 𝐚𝐧𝐬𝐰𝐞𝐫𝐬 &#13;but the expert with 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬"
+      >
+        💻 Ask me
       </div>
-      <div title="Better than ever for your&#13;production and testing&#13;environments">
-        <span class="new">NEW!</span> Latest release <code>v</code><span class="versionNum">20.23</span>
-        <span class="prod">prod</span>
+      <div class="par">
+        The latest version can provide accurate answers on a variety of engineering topics. The API is email based: send
+        an email to the
+        <a
+          href="mailto:ran@haag59.com?subject=Tech%20question%20if%20you%20please&body=I%20was%20 wondering..."
+          title="available for hire or&#13;consulting through&#13;𝗛𝗮𝗮𝗴𝟱𝟵 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲"
+          >✉ ran@haag59.com endpoint</a
+        >
+        and get answers on:
+        <ul>
+          <li>
+            <span class="emp">Modern web frontend</span> using functional programming to build beautiful user interfaces
+          </li>
+          <li>
+            <span class="emp">Backend and API development</span> on anything from <i>microcontrollers</i> to
+            <i>supercomputers</i>
+          </li>
+          <li>
+            <span class="emp">Software testing</span> continuous testing, fighting flakes, fuzzing, model-based-testing
+            with
+            <a
+              target="_blank"
+              href="https://www.csail.mit.edu/research/alloy"
+              title="𝘔𝘐𝘛 𝘈𝘭𝘭𝘰𝘺 an analyzer&#13;for software modelling"
+              >Alloy</a
+            >
+          </li>
+          <li><span class="emp">UI testing</span> desktop, mobile and web</li>
+          <li><span class="emp">Cloud</span> migration, serverless, architecture</li>
+          <li><span class="emp">Programming Languages</span> <a title="A hobby Typescript project: compositional terminal graphics" href="https://github.com/middle-ages/stacka">Typescript</a>, <a title="An old Perl project" href="https://github.com/eilara/Rx.pl">Perl</a>, <a title="Old project in C++ with a Perl API" href="https://github.com/eilara/SDLx-Betweener">C and C++</a>, Scala and Java, C#, Python, Shell languages, Query languages, Markup languges and more</li>
+          <li><span class="emp">The human side</span> mentoring, training, advocacy and leadership</li>
+        </ul>
+        Hire me! Always looking for new opportunities and currently available for consulting.
       </div>
+
+      <div class="sec" title="...and see how I can&#13;help 𝙮𝙤𝙪𝙧 software">📧 Contact</div>
+      Recruiting enquiries can be sent to
+      <a
+        href="mailto:ran@haag59.com?subject=Heard%20you%20where%20for%20hire&body=Greeings%20and%20felicitations,"
+        title="available for hire or&#13;consulting through&#13;𝗛𝗮𝗮𝗴𝟱𝟵 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲"
+        >ran@haag59.com</a
+      >
+      <hr />
+      <a title="Some recent projects" href="https://github.com/middle-ages"><img title="Some recent projects" src="github-mark.svg"></a>
     </div>
   </body>
 </html>
